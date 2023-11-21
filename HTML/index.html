@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<header class="fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand zero" href="../HTML/index.html">
+                <img class="logo" src="../image/logo.png" alt="Bootstrap">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse espaco" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200 h-50px;">
+                    <li class="nav-item carousel dropdown btn_aj">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Masculino
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">masculino</a></li>
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">feminino</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item carousel dropdown btn_aj">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Feminino
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">masculino</a></li>
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">feminino</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item carousel dropdown btn_aj">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Infantil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">masculino</a></li>
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">feminino</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item carousel dropdown btn_aj">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Esportes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">masculino</a></li>
+                            <li><a class="dropdown-item carousel" href="../HTML/index.html">feminino</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex btn_aj" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a class="navbar-brand" id="carrinho" href="./carrinho.html">
+                    <img src="../image/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Bootstrap" width="30"
+                        height="24">
+                </a>
+                <a class="navbar-brand" href="../HTML/index.html">
+                    <img src="../image/pessoa.png" alt="Bootstrap" width="30" height="24">
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<body>
+    <div class="container espacoTop">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.MNZQE192zODdDmY67uTjAQHaEv%26pid%3DApi&f=1&ipt=847176357f247a3804f376c736fb2b34e3dbf8e87ee0771fe6995f01e84af7aa&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yYI8IwcvJdx01zy1G5aN-gHaEK%26pid%3DApi&f=1&ipt=8d31d64d832999eba86ed7420a9799e87e212e61c6c6caa8f5ac70a15b500b23&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.DNCSBIgQO1pk7sIrz5sKbgHaE8%26pid%3DApi&f=1&ipt=c215298cedbdb9959160585c41ea35ff5c6d3115e1cbbf63e8fc5e605e004afd&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIF.qKbZzgWATgZ9LujaEvCJng%26pid%3DApi&f=1&ipt=b15497e6cc28b3a0e23134992605282f2e4a4515c1326f72aa77d2097115eaf0&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIF.K7WK9mR8fyl7W%252bGFjt6x%252fw%26pid%3DApi&f=1&ipt=a079ee71da0cb0d8a28d72a3f92f1062adfbb023ffde386f1f48593d9ef16fa4&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eFK3JxwetJm-u9gCdYROBAHaE8%26pid%3DApi&f=1&ipt=6be35c0811fc247c7d4c19ba3f02cfc9177ec51d6c1dc1d757bfd909733024c7&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.EvGWibecfKitHUxzkMACDwHaFF%26pid%3DApi&f=1&ipt=1f0eaab7a29c9f7801112f41281e947167ccd1ed38156766055afe29864a2542&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.UStLhwOQ-sWNpSBuiNIo1gHaHa%26pid%3DApi&f=1&ipt=0cd8e51a36f8107dc5467b2d986963f03a389bd8e9351d0a1927bf702c2cd975&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Vqq8LfJlMxs2NIBIMD1bDwHaDK%26pid%3DApi&f=1&ipt=5fc0d1e60888a7d32c84997462da020f7ef1547c9a27d83c186959f4f398f6f4&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.d-7UFbAaPsT2y3dYpaKm1AHaFb%26pid%3DApi&f=1&ipt=3216ff0c3a7025fb92a9202bd795c381b2f0ed5ba82870d69da6ea1ec6445782&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.kbnVBcqwAIY1dsqEw0a-wgHaC1%26pid%3DApi&f=1&ipt=2bcaee5d3320694ba5dc3c27566b9609fe26d56828b428957cb1da32b96ebf79&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 16rem;height: 20rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.hIV0bXxa9At9LucYKf7viAHaHa%26pid%3DApi&f=1&ipt=871b4b232c4a0776886e0beed4f10cb15a2ef353803c3b4a43be8dad68deb228&ipo=images"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-outline-dark btn_centro" onclick="comprar()">comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="../JS/compra.js"></script>
+</html>
